@@ -1,0 +1,57 @@
+/* 404 Page Styling */
+body {
+    background-color: #000; /* Full black background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+}
+
+.error-container {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 404 Animated Text */
+.error-code {
+    font-size: 120px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6a00, #ffcc00, #00ff00, #0000ff, #8a2be2, #ff1493);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Error Message */
+.error-message {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+/* Redirect Button */
+.home-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #7289da;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.home-link:hover {
+    background-color: #99aab5;
+    transform: scale(1.05);
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 100% 0; }
+    50% { background-position: 0 100%; }
+    100% { background-position: 100% 0; }
+}
